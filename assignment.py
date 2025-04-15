@@ -97,7 +97,7 @@ y_pred = newPipeline.predict(X_test)
 print("MSE:", mean_squared_error(y_test, y_pred))
 print("R²:", r2_score(y_test, y_pred))
 
-cv_scores = cross_val_score(pipeline, X, y, cv=3, scoring='r2')
+cv_scores = cross_val_score(newPipeline, X, y, cv=3, scoring='r2')
 print("CV R² Scores:", cv_scores)
 print("Mean CV R² Score:", cv_scores.mean())
 
